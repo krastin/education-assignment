@@ -1,12 +1,12 @@
 # Getting Started with Terraform
 
-Terraform is the most popular language for defining and provisioning infrastructure as code (IaC).
+Terraform is a tool for defining and provisioning Infrastructure as Code (IaC).
 
-To install Terraform, simply visit [Terraform.io](https://www.terraform.io/downloads.html) and download the compressed binary application executable file deliverable for your platform, machine or environment on which you like to run code and do development.
+To install Terraform, download the appropriate package for your system from [Terraform.io](https://www.terraform.io/downloads.html).
 
-With Terraform installed, let's dive right into it and start creating some infrastructure.
+With Terraform installed, you are ready to create some infrastructure.
 
-Most guys find it easiest to create a new directory on there local machine and create Terraform configuration code inside it.
+We recommend creating a new directory on your local machine for keeping the Terraform configuration code inside.
 
 ```shell
 $ mkdir terraform-demo
@@ -45,24 +45,24 @@ resource "docker_image" "nginx" {
 }
 ```
 
-Initialize Terraform with the `init` command. The AWS provider will be installed. 
+Initialize Terraform with the `init` command. Next, Terraform will install the Docker provider. 
 
 ```shell
 $ terraform init
 ```
 
-You should check for any errors. If it ran successfully, provision the resource with the `apply` command.
+With Terraform initialized successfully, provision the resource with the `apply` command.
 
 ```shell
 $ terraform apply
 ```
 
-The command will take up to a few minutes to run and will display a message indicating that the resource was created.
+The `apply` command takes a few minutes to run and displays a message indicating the resource was created.
 
-Finally, destroy the infrastructure.
+Congratulations, you have provisioned a Docker container. Once you are done with this tutorial, remember to destroy this resource with the `destroy` command.
 
 ```shell
 $ terraform destroy
 ```
 
-Look for a message at the bottom of the output asking for confirmation. Type `yes` and hit ENTER. Terraform will destroy the resources it had created earlier.
+The `destroy` command asks for confirmation at the bottom of the output. Type `yes` and hit ENTER. Terraform destroys the resources it had created earlier.
