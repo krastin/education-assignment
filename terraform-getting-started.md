@@ -7,7 +7,7 @@ In this guide, you will learn the basics of Terraform by provisioning a single D
 
 This tutorial assumes that you have a minimal knowledge of Docker and have it up and running.
 
-- Get Docker and learn how to install it [here]](https://docs.docker.com/get-docker/)
+- Get Docker and learn how to install it [here](https://docs.docker.com/get-docker/)
 
 ## Getting Terraform
 
