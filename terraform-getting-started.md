@@ -1,13 +1,13 @@
 # Getting Started with Terraform
 
 Terraform is a tool for defining and provisioning Infrastructure as Code (IaC).
-In this guide, you will learn the basics of Terraform by provisioning a single Docker container.
+In this guide, you will learn the basics of Terraform by provisioning a single Docker container running the nginx web server.
 
 ## Prerequisites
 
 This tutorial assumes that you have a minimal knowledge of Docker and have it up and running.
 
-- [Get Docker](https://docs.docker.com/get-docker/)
+- Get Docker and learn how to install it [here]](https://docs.docker.com/get-docker/)
 
 ## Getting Terraform
 
@@ -181,6 +181,8 @@ Apply complete! Resources: 2 added, 0 changed, 0 destroyed.
 
 The `apply` command takes a while to run and displays a message indicating the resources were created.
 
+If the command shows an error similar to `Error: Error pinging Docker server: Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?`, make sure that Docker is installed and running on your system.
+
 Congratulations, you have provisioned a Docker container. 
 
 ## Destroy Infrastructure
@@ -323,3 +325,14 @@ Destroy complete! Resources: 2 destroyed.
 ```
 
 The `destroy` command takes a while to run and displays a message indicating the resources were destroyed.
+
+## Next steps
+
+In this guide you have learned the basics of Terraform and how to manage a Docker container with configuration files.
+
+For more details on the topics and products in this guide:
+
+- Official Terraform [documentation](https://www.terraform.io/docs)
+- The Terraform Docker provider [documentation](https://registry.terraform.io/providers/kreuzwerker/docker/latest/docs)
+- Official Docker [documentation](https://docs.docker.com/)
+- Official nginx [documentation](https://docs.nginx.com/)
