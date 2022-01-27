@@ -1,6 +1,7 @@
 # Getting Started with Terraform
 
 Terraform is a tool for defining and provisioning Infrastructure as Code (IaC).
+
 In this guide, you will learn the basics of Terraform by provisioning a single Docker container running the nginx web server.
 
 ## Prerequisites
